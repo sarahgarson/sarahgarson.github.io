@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*this little piece of code is what fixed my problem of having a white space on the right side of the page*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/*for the nav part of the website*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 49px;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  color: rgba(245, 245, 245, 0.823);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px 70px;
+  width: 100%;
+}
+
+.links:hover {
+  color: #0369a1;
+}
+
+/* header part of the website*/
+
+.container {
+  background-image: url("/Users/sarahgarson/Documents/DI_Bootcamp_Stage1/Final-Project/tash-sultana-tribute.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  color: whitesmoke;
+  position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 28%;
+  left: 17%;
+  font-size: 10vw;
+  text-shadow: 3px 2px 2px black;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 34%;
+  right: 11%;
+  font-size: 10vw;
+  text-shadow: 3px 2px 2px black;
+}
+
+/* Biograpgy part of the website*/
+#biography {
+  background-image: url(/Users/sarahgarson/Documents/DI_Bootcamp_Stage1/Final-Project/pawel-czerwinski-APVgVX_yDDc-unsplash.jpg);
+
+  background-size: cover;
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 100px;
+  transition: all 1s;
+}
+
+#biography > h3 {
+  margin-bottom: 100px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 5em;
+  text-shadow: 3px 2px 2px black;
+}
+
+.content {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 2px grey;
+}
+
+#biography > p {
+  padding: 30px 40px 200px;
+  color: rgb(50, 50, 50);
+  line-height: 90px;
+}
+
+/* for the Music part of the website*/
+
+.music {
+  margin-left: 70px;
+  margin-top: 200px;
+  padding-top: 70px;
+}
+
+.music > h3 {
+  font-size: 5em;
+  text-shadow: 2px 2px 2px grey;
+  color: rgb(67, 64, 64);
+  margin-bottom: 150px;
+  margin-left: 40px;
+}
+
+.music > img {
+  float: right;
+  margin-right: 90px;
+  border-radius: 20%;
+}
+
+.music > ul {
+  color: rgb(67, 64, 64);
+  font-size: 170%;
+  text-shadow: none;
+}
+
+/*Tashs career and awards*/
+
+.awards {
+  margin-top: 500px;
+  background-color: rgb(46, 77, 93);
+  padding-bottom: 100px;
+}
+
+.awards > h3 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 200px;
+  padding-bottom: 170px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px grey;
+  text-decoration: underline;
+}
+
+.tash {
+  width: 450px;
+  height: 500px;
+  transition: all 1s;
+}
+
+.tash:hover {
+  transform: scale(1.1);
+}
+
+.pictures {
+  flex-direction: row;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+/* I added all the ps in the html basically with the class of 'content' so I would have to make all the changes one by one, and add a class to make small changes like color*/
+
+/* For the two boxes at the end what worked for me was putting both in margin:auto and width:50% to make them center and be responsive to the screen size*/
+.box1 {
+  color: white;
+  font-size: 150%;
+  text-shadow: 1px 1px 1px grey;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border: 15px solid rgb(28, 43, 65);
+  padding: 70px;
+  margin-bottom: 50px;
+  background-color: rgba(243, 98, 46, 0.611);
+  border-radius: 50px;
+}
+
+.box2 {
+  color: white;
+  font-size: 150%;
+  text-shadow: 1px 1px 1px grey;
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  border: 15px solid rgb(28, 43, 65);
+  padding: 100px;
+  margin-bottom: 200px;
+  background-color: rgba(243, 98, 46, 0.611);
+  border-radius: 50px;
+}
+
+/* Video of the Awards part of the website, the styling was devided between css and html since it was already integrated inside the code I copied from youtube (since it was embeded)*/
+.video {
+  position: relative;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+/* spotify related*/
+
+#last-part {
+  margin-bottom: 400px;
+}
+
+.para-spotify {
+  font-size: 50px;
+  color: #00428c;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+#para-spotify2 {
+  font-size: 50px;
+  color: #0369a1;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.spotify {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 60px;
+}
+/* beginning of footer area of the website*/
+footer {
+  background-color: black;
+  color: aliceblue;
+  font-size: 20px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+footer > p {
+  padding-bottom: 20px;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.link-footer:hover {
+  color: #00428c;
+}
+
+.copy-right {
+  padding-top: 30px;
+}
